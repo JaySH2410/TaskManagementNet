@@ -8,8 +8,7 @@ namespace TaskManagement.Services
     public class TaskService : ITaskService
     {
         private readonly ITaskRepository _taskRepository;
-        private readonly ILogger<TaskService> _logger;
-
+        private readonly ILogger<TaskService> _logger
         //private readonly ICurrentUserService _currentUser;
 
         public TaskService(ITaskRepository taskRepository, ILogger<TaskService> logger)
@@ -18,8 +17,6 @@ namespace TaskManagement.Services
             _logger = logger;
             //_currentUser = currentUser;
         }
-
-        // DTO MAPPERS ----------------------------
 
         private TaskDto ToDto(TaskEntity entity)
         {
@@ -58,8 +55,6 @@ namespace TaskManagement.Services
             entity.Status = dto.Status;
             entity.CategoryId = dto.CategoryId;
         }
-
-        // SERVICE METHODS ----------------------------
 
         public async Task<IEnumerable<TaskDto>> GetAllTasksAsync()
         {

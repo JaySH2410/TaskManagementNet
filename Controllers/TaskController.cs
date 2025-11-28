@@ -19,7 +19,6 @@ namespace TaskManagement.Controllers
             _taskService = taskService;
         }
 
-        // GET: api/task
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -27,7 +26,6 @@ namespace TaskManagement.Controllers
             return Ok(ApiResponse.Success(tasks, "Tasks retrieved successfully"));
         }
 
-        // GET: api/task/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -38,7 +36,6 @@ namespace TaskManagement.Controllers
             return Ok(ApiResponse.Success(task, "Task retrieved successfully"));
         }
 
-        // POST: api/task
         [HttpPost]
         public async Task<IActionResult> Create(CreateTaskDto dto)
         {
@@ -48,7 +45,6 @@ namespace TaskManagement.Controllers
              ApiResponse.Success(created, "Task created successfully"));
         }
 
-        // PUT: api/task/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, UpdateTaskDto dto)
         {
@@ -59,7 +55,6 @@ namespace TaskManagement.Controllers
             return Ok(ApiResponse.Success(updated, "Task updated successfully"));
         }
 
-        // DELETE: api/task/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

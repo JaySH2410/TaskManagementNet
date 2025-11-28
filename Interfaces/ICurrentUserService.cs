@@ -1,7 +1,7 @@
-﻿//namespace TaskManagement.Interfaces
-//{
-//    public interface ICurrentUserService
-//    {
-//        int? UserId { get; }
-//    }
-//}
+﻿namespace TaskManagement.Interfaces
+{
+    public interface ICurrentUserService
+    {
+        int? UserId { get; }
+    }
+}

@@ -19,7 +19,7 @@ namespace TaskManagement.Middlewares
         {
             try
             {
-                await _next(context);  // continue request pipeline
+                await _next(context); 
             }
             catch (Exception ex)
             {
