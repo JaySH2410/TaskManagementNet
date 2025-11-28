@@ -1,4 +1,4 @@
-﻿##Project Folder Structure
+﻿## Project Folder Structure
 
 TaskManagement/
 
@@ -36,27 +36,28 @@ TaskManagement/
 | **Middlewares**  | Global exception handler, logging middleware                |
 | **Logs**         | Log file storage (if using Serilog/NLog)                    |
 
-##Project Setup & Initialization Guide
+## Project Setup & Initialization Guide
 
 1. Clone the Repository
-
+```
 git clone <repository-url>
 cd TaskManagement
-
+```
 
 2. Configure Database Connection
 
 Open appsettings.json and update your SQL connection string:
-
+```
 "ConnectionStrings": {
   "DefaultConnection": "Server=.;Database=TaskManagement;Trusted_Connection=True;TrustServerCertificate=True;"
 }
+```
 
 3. Make sure the DB has been restored
 
 ---
 
-##API Endpoints Summary
+## API Endpoints Summary
 
 | Method | Endpoint             | Description           |
 | ------ | -------------------- | --------------------- |
@@ -73,12 +74,12 @@ Open appsettings.json and update your SQL connection string:
 | `DELETE` | `/api/Task/{id}` | Delete task     |
 
 ---
-##Architecture Approach
+## Architecture Approach
 ```
 Controller → Service → Repository → DbContext → SQL Database
 ```
 ---
-##Planned Enhancements
+## Planned Enhancements
 - Authentication & JWT authorization
 - Pagination, Sorting & Search
 - PUT and POST CRUD Operation for Category and User
