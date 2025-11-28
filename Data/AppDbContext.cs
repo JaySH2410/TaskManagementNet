@@ -10,18 +10,6 @@ namespace TaskManagement.Data
 
         public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<CategoryEntity> Categories { get; set; }
-        //public DbSet<UserEntity> Users { get; set; }
-
-        // OnModelCreating if needed:
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<TaskEntity>()
-        //        .HasOne(t => t.User)
-        //        .WithMany(u => u.Tasks)
-        //        .HasForeignKey(t => t.UserId);
-
-        //    // existing configs...
-        //}
-
+        public DbSet<UserEntity> Users { get; set; }
     }
 }

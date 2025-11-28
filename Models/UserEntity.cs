@@ -8,6 +8,6 @@
         public byte[] PasswordSalt { get; set; } = null!;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public ICollection<TaskEntity> Tasks { get; set; } = new List<TaskEntity>();
+        //public ICollection<TaskEntity> Tasks { get; set; } = new List<TaskEntity>();
     }
 }

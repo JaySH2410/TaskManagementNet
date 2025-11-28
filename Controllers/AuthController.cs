@@ -25,7 +25,6 @@ namespace TaskManagement.Controllers
             _config = config;
         }
 
-        // REGISTER / SIGNUP
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDto dto)
         {
@@ -48,7 +47,6 @@ namespace TaskManagement.Controllers
             return Ok(ApiResponse.Success(null, message: "User registered successfully"));
         }
 
-        // LOGIN / SIGNIN
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto dto)
         {
@@ -63,15 +61,13 @@ namespace TaskManagement.Controllers
             return Ok(ApiResponse.Success(new { token, userId = user.Id, userName = user.UserName }, "User logged in successfully"));
         }
 
-        // VERIFY TOKEN (OPTIONAL ENDPOINT)
         [HttpGet("verify")]
         public IActionResult VerifyToken()
         {
             return Ok(new { message = "Token is valid" });
         }
 
-        // ================= HELPER METHODS =================
-
+        
         private string CreateToken(UserEntity user)
         {
             var claims = new List<Claim>

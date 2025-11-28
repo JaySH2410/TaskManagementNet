@@ -8,7 +8,7 @@ namespace TaskManagement.Services
     public class TaskService : ITaskService
     {
         private readonly ITaskRepository _taskRepository;
-        private readonly ILogger<TaskService> _logger
+        private readonly ILogger<TaskService> _logger;
         //private readonly ICurrentUserService _currentUser;
 
         public TaskService(ITaskRepository taskRepository, ILogger<TaskService> logger)
