@@ -1,17 +1,28 @@
 ﻿Project Folder Structure
-
 TaskManagement/
+
 │── Controllers/
+
 │── Data/
+
 │── DTOs/
+
 │── Interfaces/
+
 │── Logs/
+
 │── Mappings/
+
 │── Middlewares/
+
 │── Models/
+
 │── Repositories/
+
 │── Services/
+
 │── appsettings.json
+
 │── Program.cs
 
 | Folder           | Purpose                                                     |
@@ -40,7 +51,7 @@ cd TaskManagement
 Open appsettings.json and update your SQL connection string:
 
 "ConnectionStrings": {
-  "DefaultConnection": "Server=.;Database=TaskManagementDb;Trusted_Connection=True;TrustServerCertificate=True;"
+  "DefaultConnection": "Server=.;Database=TaskManagement;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 
 3. Make sure the DB has been restored
