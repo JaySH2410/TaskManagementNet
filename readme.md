@@ -34,7 +34,6 @@ TaskManagement/
 | **Services**     | Business logic layer                                        |
 | **Interfaces**   | Abstraction layer for DI (IService, IRepository interfaces) |
 | **Middlewares**  | Global exception handler, logging middleware                |
-| **Mappings**     | AutoMapper mapping profiles                                 |
 | **Logs**         | Log file storage (if using Serilog/NLog)                    |
 
 ##Project Setup & Initialization Guide
