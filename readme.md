@@ -1,15 +1,26 @@
 ﻿Project Folder Structure
 TaskManagement/
+
 │── Controllers/
+
 │── Data/
+
 │── DTOs/
+
 │── Interfaces/
+
 │── Logs/
+
 │── Middlewares/
+
 │── Models/
+
 │── Repositories/
+
 │── Services/
+
 │── appsettings.json
+
 │── Program.cs
 
 | Folder           | Purpose                                                     |
